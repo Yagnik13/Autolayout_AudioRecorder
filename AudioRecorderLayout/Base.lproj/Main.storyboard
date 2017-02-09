@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ea9-jJ-5RZ">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Audio Recorder-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioRecorderLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Waveform new" translatesAutoresizingMaskIntoConstraints="NO" id="oze-a1-lhx">
+                                <rect key="frame" x="-23" y="49" width="362" height="272"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="00:01.12" translatesAutoresizingMaskIntoConstraints="NO" id="84w-G5-6f5">
+                                <rect key="frame" x="85" y="329" width="150" height="36"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Zts-gp-7rN">
+                                <rect key="frame" x="71" y="411" width="175" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG7-gv-r4P">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="HiC-Nd-AYq"/>
+                                            <constraint firstAttribute="width" constant="70" id="xFh-5c-D94"/>
+                                        </constraints>
+                                        <state key="normal" image="Pause Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KA0-4s-k9S">
+                                        <rect key="frame" x="105" y="0.0" width="70" height="70"/>
+                                        <state key="normal" image="Stop Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oze-a1-lhx" secondAttribute="trailing" constant="-19" id="9JB-Dh-Hha"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="84w-G5-6f5" secondAttribute="bottom" constant="203" id="9wB-YK-CSp"/>
+                            <constraint firstItem="Zts-gp-7rN" firstAttribute="top" secondItem="84w-G5-6f5" secondAttribute="bottom" constant="46" id="Ckl-g9-bVa"/>
+                            <constraint firstItem="84w-G5-6f5" firstAttribute="top" secondItem="oze-a1-lhx" secondAttribute="bottom" constant="8" id="GJK-BS-tTp"/>
+                            <constraint firstItem="oze-a1-lhx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-23" id="GYT-PE-eau"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oze-a1-lhx" secondAttribute="bottom" constant="247" id="Gbs-d8-eGs"/>
+                            <constraint firstAttribute="trailing" secondItem="84w-G5-6f5" secondAttribute="trailing" constant="85" id="PWh-Yu-et6"/>
+                            <constraint firstItem="84w-G5-6f5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="85" id="Yzt-GI-ccQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zts-gp-7rN" secondAttribute="trailing" constant="58" id="lwa-nU-YVm"/>
+                            <constraint firstItem="Zts-gp-7rN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="mNB-x1-grn"/>
+                            <constraint firstItem="oze-a1-lhx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="49" id="r4O-BN-N4q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zts-gp-7rN" secondAttribute="bottom" constant="87" id="utd-nx-Z7a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Audio Recorder" id="wNr-cY-Amf">
+                        <barButtonItem key="leftBarButtonItem" image="menudot" id="fGF-XV-db2"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="3Np-m0-bVQ"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113.75" y="122.53521126760563"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l9b-0d-1Hi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ea9-jJ-5RZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wzZ-ms-tbp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="l8d-db-lN8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ciu-sf-kuy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="00:01.12" width="288" height="59"/>
+        <image name="Pause Button" width="130" height="130"/>
+        <image name="Stop Button" width="130" height="130"/>
+        <image name="Waveform new" width="353" height="195"/>
+        <image name="menudot" width="37" height="28"/>
+    </resources>
+</document>
